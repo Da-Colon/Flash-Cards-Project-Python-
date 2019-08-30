@@ -1,3 +1,6 @@
+import decimal
+import threading
+
 print('Welcome to FLASHCARDS EXTREME!!!!')
 
 def START():
@@ -8,12 +11,13 @@ def START():
     elif usrChoice == 'p':
         print('EXTREME')
     elif usrChoice == 'e':
-        print('EXIT')
+        print('Thanks For Playing!!!')
+        exit()
     else:
         print('You did not imnput a correct response')
         print('Please Try Again')
         START()
-#Start GAME
+#Start GAME########################################
 START()
 
 
@@ -21,10 +25,10 @@ class IndexCard:
     def __init__(self,cardFront,cardBack):
         self.cardFront = cardFront
         self.cardBack = cardBack
+    # def storeCard(self):
     def viewCard(self):
-        print(self.cardFront)
-        print(self.cardBack)
-
+         print(self.cardFront)
+         print(self.cardBack)
 usrInptF = input('Please enter a Term or Phraze ')
 usrInptB = input('Please enter the meaning of ' + usrInptF + ' ')
 
