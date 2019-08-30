@@ -6,5 +6,14 @@ class IndexCard:
         print(self.cardFront)
         print(self.cardBack)
 
-Card001 = IndexCard('This is the Front','This is the back')
-Card001.viewCard()
+usrInptF = input('Please enter a Term or Phraze ')
+usrInptB = input('Please enter the meaning of ' + usrInptF + ' ')
+
+
+
+
+
+
+card_One = IndexCard(usrInptF,usrInptB) 
+card_One.viewCard()
+
