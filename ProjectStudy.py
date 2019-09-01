@@ -5,9 +5,9 @@ print('Welcome to FLASHCARDS EXTREME!!!!')
 
 def START():
     print('What would you like to do? ')
-    usrChoice = input('New Card(A) | Play EXTREME(P) | Exit Game(E): ')
+    usrChoice = input('Add New Card(a) | Play EXTREME(p) | Exit Game(e): ')
     if usrChoice == 'a':
-        print('ChangeME')
+        
     elif usrChoice == 'p':
         print('EXTREME')
     elif usrChoice == 'e':
@@ -29,8 +29,10 @@ class IndexCard:
     def viewCard(self):
          print(self.cardFront)
          print(self.cardBack)
-usrInptF = input('Please enter a Term or Phraze ')
-usrInptB = input('Please enter the meaning of ' + usrInptF + ' ')
+
+
+# usrInptF = input('Please enter a Term or Phraze ')                    #Erase
+# usrInptB = input('Please enter the meaning of ' + usrInptF + ' ')     #Erase
 
 card_One = IndexCard(usrInptF,usrInptB) 
 card_One.viewCard()
